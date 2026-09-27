@@ -14,4 +14,9 @@ public class StudentController {
 		return "Hello Rakesh";
 	}
 
+	@GetMapping("/greet_secondname")
+	public String  getId(){
+		return "Hello Vikash";
+	}
+
 }
