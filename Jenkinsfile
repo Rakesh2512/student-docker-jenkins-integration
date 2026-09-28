@@ -21,6 +21,15 @@ pipeline {
                 bat 'docker run -d --name student-container -p 8082:8082 student:latest'
             }
         }
+    }
 
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+
+        failure {
+            echo 'Pipeline failed!'
+        }
     }
 }
