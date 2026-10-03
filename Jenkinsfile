@@ -69,9 +69,9 @@ pipeline {
             echo '======================================'
             echo 'PIPELINE SUCCESSFUL!'
             echo '======================================'
-            echo "Application: %APP_NAME%"
-            echo "Docker Image: %APP_NAME%:%BUILD_NUMBER%"
-            echo "Port: %APP_PORT%"
+            echo "Application: ${env.APP_NAME}"
+            echo "Docker Image: ${env.APP_NAME}:${env.BUILD_NUMBER}"
+            echo "Port: ${env.APP_PORT}"
         }
 
         failure {
