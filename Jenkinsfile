@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment{
-        APP_NAME:'student'
-        APP_PORT:'8082'
+        APP_NAME = 'student'
+        APP_PORT = '8082'
     }
 
     stages {
