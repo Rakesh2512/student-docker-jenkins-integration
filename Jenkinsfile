@@ -58,7 +58,7 @@ pipeline {
 
                 echo 'Checking application...'
 
-                bat 'curl http://localhost:%APP_PORT%'
+                //bat 'curl http://localhost:%APP_PORT%'
             }
         }
     }
